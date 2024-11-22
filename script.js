@@ -1,4 +1,53 @@
-document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Pesan Anda telah terkirim! Kami akan segera menghubungi Anda.");
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector(".slider");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // Geser slider dengan drag
+    slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+    });
+
+    slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Auto-scroll slider
+    let autoScroll = setInterval(() => {
+        slider.scrollLeft += 1;
+        if (
+            slider.scrollLeft + slider.clientWidth >= slider.scrollWidth ||
+            slider.scrollLeft === 0
+        ) {
+            clearInterval(autoScroll);
+            setTimeout(() => {
+                slider.scrollLeft = 0;
+                autoScroll = setInterval(() => (slider.scrollLeft += 1), 30);
+            }, 3000);
+        }
+    }, 30);
+
+    // Pause auto-scroll saat hover
+    slider.addEventListener("mouseover", () => clearInterval(autoScroll));
+    slider.addEventListener("mouseout", () => {
+        autoScroll = setInterval(() => (slider.scrollLeft += 1), 30);
+    });
 });
