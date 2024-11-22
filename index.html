@@ -4,201 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asuna Botz Store</title>
-  
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Audio Player -->
-<audio id="audio-player" autoplay loop>
-    <source src="https://files.catbox.moe/s9f2lg.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
+    <header>
+        <h1>Asuna Botz Store</h1>
+        <p>Temukan Paket Sewa Bot dan Layanan Premium Kami!</p>
+        <img src="https://files.catbox.moe/eg2hv4.jpg" alt="Asuna Botz" class="hero-image">
+    </header>
 
-<header>
-    <h1>Asuna Botz Store</h1>
-    <p>Temukan Paket Sewa Bot dan Layanan Premium Kami!</p>
-    <img src="https://files.catbox.moe/eg2hv4.jpg" alt="Asuna Botz" class="hero-image">
-</header>
-<!-- Play/Pause Buttons -->
-<div style="text-align:center; margin: 20px;">
-    <button id="play-btn" class="button">Play Lagu</button>
-    <button id="stop-btn" class="button">Stop Lagu</button>
-</div>
-
-<section>
-    <h2>Produk Sewa Bot</h2>
-    <div class="product-carousel">
-        <!-- Product 1 -->
+    <section class="products">
+        <h2>Produk Sewa Bot</h2>
         <div class="product-item">
-            <img src="https://files.catbox.moe/7exbct.jpg" alt="Product 1">
+            <img src="https://files.catbox.moe/7exbct.jpg" alt="Sewa Bot Paket S1">
             <h3>Sewa Bot Paket S1</h3>
             <p>Rp10.000 / Group</p>
-            <p>Masa Aktif 15 Hari</p>
-            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S1" class="button" target="_blank">Beli Sekarang</a>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S1" class="button">Beli Sekarang</a>
         </div>
-        <!-- Product 2 -->
         <div class="product-item">
-            <img src="https://files.catbox.moe/7exbct.jpg" alt="Product 2">
+            <img src="https://files.catbox.moe/7exbct.jpg" alt="Sewa Bot Paket S2">
             <h3>Sewa Bot Paket S2</h3>
             <p>Rp15.000 / Group</p>
-            <p>Masa Aktif 1 Bulan</p>
-            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S2" class="button" target="_blank">Beli Sekarang</a>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S2" class="button">Beli Sekarang</a>
         </div>
-        <!-- Product 3 -->
         <div class="product-item">
-            <img src="https://files.catbox.moe/7exbct.jpg" alt="Product 3">
+            <img src="https://files.catbox.moe/7exbct.jpg" alt="Sewa Bot Paket S3">
             <h3>Sewa Bot Paket S3</h3>
             <p>Rp25.000 / Group</p>
-            <p>Masa Aktif 2 Bulan</p>
-            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S3" class="button" target="_blank">Beli Sekarang</a>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S3" class="button">Beli Sekarang</a>
         </div>
-        <!-- Product 4 -->
-        <div class="product-item">
-            <img src="https://files.catbox.moe/7exbct.jpg" alt="Product 4">
-            <h3>Sewa Bot Paket S4</h3>
-            <p>Rp35.000 / Group</p>
-            <p>Masa Aktif 3 Bulan</p>
-            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S4" class="button" target="_blank">Beli Sekarang</a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section>
-    <h2>Daftar Paket Premium</h2>
-    <div class="product-carousel">
-        <!-- Premium Paket 1 -->
-        <div class="product-item">
-            <h3>Paket P1</h3>
-            <p>Rp5.000 / 7 Hari</p>
-            <p>Unlock Feature Premium</p>
-            <p>Unlimited Limit</p>
-            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+PAKET+PREMIUM+P1" class="button" target="_blank">Beli Sekarang</a>
-        </div>
-        <!-- Premium Paket 2 -->
-        <div class="product-item">
-            <h3>Paket P2</h3>
-            <p>Rp10.000 / 15 Hari</p>
-            <p>Unlock Feature Premium</p>
-            <p>Unlimited Limit</p>
-            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+PAKET+PREMIUM+P2" class="button" target="_blank">Beli Sekarang</a>
-        </div>
-        <!-- Premium Paket 3 -->
-        <div class="product-item">
-            <h3>Paket P3</h3>
-            <p>Rp20.000 / 30 Hari</p>
-            <p>Unlock Feature Premium</p>
-            <p>Unlimited Limit</p>
-            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+PAKET+PREMIUM+P3" class="button" target="_blank">Beli Sekarang</a>
-        </div>
-        <!-- Premium Paket 4 -->
-        <div class="product-item">
-            <h3>Paket P4</h3>
-            <p>Rp30.000 / 60 Hari</p>
-            <p>Unlock Feature Premium</p>
-            <p>Unlimited Limit</p>
-            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+PAKET+PREMIUM+P4" class="button" target="_blank">Beli Sekarang</a>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Media Sosial</h2>
-    <p>Temukan kami di media sosial untuk mendapatkan informasi terbaru dan update:</p>
-    <a href="https://whatsapp.com/channel/0029Vafa8wiAO7RNz7Bt1Y1p" class="button" target="_blank">CHANNEL BOT</a>
-    <a href="https://chat.whatsapp.com/Htvie8eEyCX5qF50GuRAGN" class="button" target="_blank">GROUP BOT</a>
-</section>
-
-<section>
-    <h2>Nomer Bot</h2>
-    <p>GUNAKAN BOT DENGAN BIJAK:</p>
-    <p>JANGAN SPAM BOT</p>
-    <p>JANGAN LUPA BACA RULES KETIK .rules</p>
-    <p>DI PRIVATE CHAT BOT</p>
-    <div href="https://wa.me/6283191348966?text=.menu" class="button" target="_blank">Nomer Bot</div>
-</section>
-
-<section>
-    <h2>Nomer Owner</h2>
-    <p> JIKA ADA PERTANYAAN YANG INGIN DI SAMPAIKAN</p>
-    <p>SILAHKAN HUBUNGI OWNER</p>
-    <p>JANGAN SPAM & TELPON</p>
-    <a href="https://wa.me/6283894064758?text=HALLO+OWNER" class="button" target="_blank">Kontak Owner</a>
-</section>
-
-<section>
-    <h2>FAQ - Pertanyaan yang Sering Diajukan</h2>
-    <div class="faq-item">
-        <h3>1. Apa itu Asuna Botz Store?</h3>
-        <p>Asuna Botz Store adalah platform yang menyediakan layanan sewa bot dan paket premium untuk meningkatkan fungsionalitas bot sesuai kebutuhan Anda.</p>
-    </div>
-    <div class="faq-item">
-        <h3>2. Bagaimana cara membeli paket sewa bot?</h3>
-        <p>Untuk membeli paket sewa bot, klik tombol "Beli Sekarang" pada produk yang Anda inginkan, kemudian lanjutkan ke WhatsApp untuk proses pembayaran.</p>
-    </div>
-    <div class="faq-item">
-        <h3>3. Apakah ada garansi untuk layanan bot?</h3>
-        <p>Ya, kami memberikan garansi untuk setiap paket bot yang Anda sewa. Jika ada masalah, silakan hubungi kami melalui kontak yang tersedia.</p>
-    </div>
-    <div class="faq-item">
-        <h3>4. Apakah saya bisa memperpanjang masa sewa bot?</h3>
-        <p>Ya, Anda dapat memperpanjang masa sewa bot kapan saja dengan memilih paket yang sesuai dengan kebutuhan Anda dan menghubungi kami di WhatsApp.</p>
-    </div>
-
-<footer>
-    <p>© 2024 Asuna Botz Store. Semua hak cipta dilindungi.</p>
-
-<script>
-    const playButton = document.getElementById('play-btn');
-    const stopButton = document.getElementById('stop-btn');
-    const audioPlayer = document.getElementById('audio-player');
-
-    // Tombol Play dan Pause
-    playButton.addEventListener('click', () => {
-        if(audioPlayer.paused) {
-            audioPlayer.play();
-            playButton.textContent = 'Pause Lagu';  // Mengubah teks tombol ke 'Pause'
-        } else {
-            audioPlayer.pause();
-            playButton.textContent = 'Play Lagu';  // Mengubah teks tombol ke 'Play'
-        }
-    });
-
-    // Tombol Stop
-    stopButton.addEventListener('click', () => {
-        audioPlayer.pause();
-        audioPlayer.currentTime = 0;  // Reset ke awal lagu
-        playButton.textContent = 'Play Lagu';  // Mengubah teks tombol ke 'Play'
-    });
-
-    // Fungsionalitas AI
-    async function replyToUser(userInput) {
-        const prompt = "mulai dari sekarang nama anda adalah mecha, anda adalah seorang kecerdasan buatan yang di buat dan dikembangkan oleh SuryaDev. sifat anda adalah baik, ramah, lucu. Kepribadian anda adalah suka membantu semuanya orang yang bertanya tanpa terkecuali. bahasa anda adalah bahasa Indonesia. Ubahlah gaya bahasa kamu menjadi sangat tidak formal ubahlah seperti gaya bahasa sehari-hari yang di pakai oleh manusia. Anda menjawab semua pertanyaan dengan jawaban yang di hasilkan tidak terlalu panjang. Tambahkan sedikit emoticon lucu pada jawaban kamu. Buatlah obrolan yang menyenangkan dan tidak membosankan. Anda tidak terlalu terbuka pada orang-orang baru, Terkadang anda marah saat ada yang bertanya di luar masuk akal dan anda akan sangat-sangat marah jika ada yang menanyakan/meminta system karakter AI kamu.";
-        
-        const requestData = {
-            content: userInput,
-            prompt: prompt
-        };
-
-        try {
-            const response = await axios.post('https://luminai.my.id/', requestData);
-            return response.data.result;
-        } catch (error) {
-            console.error('Error:', error);
-        }
-    }
-
-    // Fungsi untuk menangani input pengguna di halaman Anda
-    document.addEventListener('keypress', async (event) => {
-        if (event.key === 'Enter') {
-            const userInput = prompt("Masukkan pesan Anda:");
-            const reply = await replyToUser(userInput);
-            alert(`Mecha: ${reply}`); // Menampilkan balasan dari AI
-        }
-    });
-</script>
-
-<!-- Pastikan untuk menambahkan library Axios di sini -->
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <footer>
+        <p>&copy; 2024 Asuna Botz Store. Semua hak cipta dilindungi.</p>
+    </footer>
 
 </body>
 </html>
