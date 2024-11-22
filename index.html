@@ -1,58 +1,87 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asuna Botz Store</title>
+    <title>Jual Sewa Bot & Premium</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <div class="header-content">
-            <h1>Asuna Botz Store</h1>
-            <p>Temukan Paket Sewa Bot dan Layanan Premium Kami!</p>
-            <a href="#products" class="button">Lihat Produk</a>
+        <div class="container">
+            <h1>Sewa Bot & Layanan Premium</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#pricing">Harga</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
         </div>
-        <img src="https://files.catbox.moe/eg2hv4.jpg" alt="Asuna Botz" class="hero-image">
     </header>
 
-    <!-- Product Section -->
-    <section id="products" class="products">
-        <h2>Paket Sewa Bot</h2>
-        <div class="product-container">
-            <!-- Product 1 -->
-            <div class="product-item">
-                <img src="https://files.catbox.moe/7exbct.jpg" alt="Sewa Bot Paket S1">
-                <h3>Sewa Bot Paket S1</h3>
-                <p>Rp10.000 / Group</p>
-                <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S1" class="button">Beli Sekarang</a>
+    <section id="hero">
+        <div class="container">
+            <h2>Cara Mudah dan Murah untuk Menggunakan Bot Canggih</h2>
+            <p>Temukan layanan bot dan premium terbaik untuk kebutuhan Anda.</p>
+            <a href="#services" class="btn">Jelajahi Layanan</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service-item">
+                <h3>Sewa Bot Telegram</h3>
+                <p>Bot otomatis untuk berbagai kebutuhan seperti pengelolaan grup, chatbot, dll.</p>
             </div>
-            <!-- Product 2 -->
-            <div class="product-item">
-                <img src="https://files.catbox.moe/7exbct.jpg" alt="Sewa Bot Paket S2">
-                <h3>Sewa Bot Paket S2</h3>
-                <p>Rp15.000 / Group</p>
-                <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S2" class="button">Beli Sekarang</a>
-            </div>
-            <!-- Product 3 -->
-            <div class="product-item">
-                <img src="https://files.catbox.moe/7exbct.jpg" alt="Sewa Bot Paket S3">
-                <h3>Sewa Bot Paket S3</h3>
-                <p>Rp25.000 / Group</p>
-                <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S3" class="button">Beli Sekarang</a>
+            <div class="service-item">
+                <h3>Layanan Premium</h3>
+                <p>Akses fitur eksklusif untuk meningkatkan produktivitas Anda.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Paket Harga</h2>
+            <div class="pricing-item">
+                <h3>Basic</h3>
+                <p>Rp 50.000/bulan</p>
+                <a href="#" class="btn">Pesan Sekarang</a>
+            </div>
+            <div class="pricing-item">
+                <h3>Pro</h3>
+                <p>Rp 100.000/bulan</p>
+                <a href="#" class="btn">Pesan Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <form>
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Kirim</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Asuna Botz Store. Semua hak cipta dilindungi.</p>
-            <p>Hubungi Kami: <a href="https://wa.me/6283894064758" target="_blank">Owner WhatsApp</a></p>
+        <div class="container">
+            <p>&copy; 2024 Sewa Bot & Premium. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
