@@ -1,260 +1,182 @@
-l
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Riu</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuna Botz Store</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS -->
 </head>
-
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">RiuzeMD</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Riuze</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="https://files.catbox.moe/v9ih8a.png" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="shine">Riuze</h1>
-            <p class="section__text__p2">Content Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('https://whatsapp.com/channel/0029VasIl1Y002TAMpEgWv2y')">
-    Saluran Wa
-  </button>
-                <button class="btn btn-color-1" onclick="window.open('https://wa.me/628388910861')">
-    Whatsapp
-  </button>
-            </div>
-            <div id="socials-container">
-                <img src="https://files.catbox.moe/k9bi45.png" alt="My Discord" class="icon" onclick="location.href='https://discord.com/'" />
-                <img src="https://files.catbox.moe/ow36s9.png" alt="My Whatsapp" class="icon" onclick="location.href='https://wa.me/628388910861'" />
-            </div>
-        </div>
-    </section>
-    <div class="dropdown">
-        <input hidden="" class="sr-only" name="state-dropdown" id="state-dropdown" type="checkbox" />
-        <label aria-label="dropdown scrollbar" for="state-dropdown" class="trigger"></label>
 
-        <ul class="list webkit-scrollbar" role="list" dir="auto">
-            <li class="listitem" role="listitem">
-                <article class="article">Subs My Youtube.</article>
-            </li>
+<!-- Audio Player -->
+<audio id="audio-player" autoplay loop>
+    <source src="https://files.catbox.moe/s9f2lg.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
 
-            <li class="listitem" role="listitem">
-                <article class="article">
-                    Gamer And Content Creator YT.
-                </article>
-            </li>
+<header>
+    <h1>Asuna Botz Store</h1>
+    <p>Temukan Paket Sewa Bot dan Layanan Premium Kami!</p>
+    <img src="https://files.catbox.moe/eg2hv4.jpg" alt="Asuna Botz" class="hero-image">
+</header>
 
-            <li class="listitem" role="listitem">
-                <article class="article">
-                    Thanks You For All.
-                </article>
-            </li>
-        </ul>
+<!-- Play/Pause Buttons -->
+<div style="text-align:center; margin: 20px;">
+    <button id="play-btn" class="button">Play Lagu</button>
+    <button id="stop-btn" class="button">Stop Lagu</button>
+</div>
+
+<section>
+    <h2>Produk Sewa Bot</h2>
+    <div class="product-carousel">
+        <!-- Product 1 -->
+        <div class="product-item">
+            <img src="https://files.catbox.moe/7exbct.jpg" alt="Product 1">
+            <h3>Sewa Bot Paket S1</h3>
+            <p>Rp10.000 / Group</p>
+            <p>Masa Aktif 15 Hari</p>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S1" class="button" target="_blank">Beli Sekarang</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item">
+            <img src="https://files.catbox.moe/7exbct.jpg" alt="Product 2">
+            <h3>Sewa Bot Paket S2</h3>
+            <p>Rp15.000 / Group</p>
+            <p>Masa Aktif 1 Bulan</p>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S2" class="button" target="_blank">Beli Sekarang</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item">
+            <img src="https://files.catbox.moe/7exbct.jpg" alt="Product 3">
+            <h3>Sewa Bot Paket S3</h3>
+            <p>Rp25.000 / Group</p>
+            <p>Masa Aktif 2 Bulan</p>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S3" class="button" target="_blank">Beli Sekarang</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-item">
+            <img src="https://files.catbox.moe/7exbct.jpg" alt="Product 4">
+            <h3>Sewa Bot Paket S4</h3>
+            <p>Rp35.000 / Group</p>
+            <p>Masa Aktif 3 Bulan</p>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+SEWA+BOT+S4" class="button" target="_blank">Beli Sekarang</a>
+        </div>
     </div>
+</section>
 
-    <section id="about">
-        <p class="section__text__p1">Informasi Lainnya</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="https://files.catbox.moe/peus7x.gif" alt="Profile picture" class="about-pic" />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="https://files.catbox.moe/hw2zuv.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>1+ Montth <br />Website Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="https://files.catbox.moe/zbqhvf.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>Smk ( TKJ )<br />Teknik Komputer Jaringan</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I am a website coding beginner with only 1 month of experience. Cannot be described as a practical and effective developer, experienced in leading cross-functional teams under time pressure to complete projects
-                    </p>
-                </div>
-            </div>
+<section>
+    <h2>Daftar Paket Premium</h2>
+    <div class="product-carousel">
+        <!-- Premium Paket 1 -->
+        <div class="product-item">
+            <h3>Paket P1</h3>
+            <p>Rp5.000 / 7 Hari</p>
+            <p>Unlock Feature Premium</p>
+            <p>Unlimited Limit</p>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+PAKET+PREMIUM+P1" class="button" target="_blank">Beli Sekarang</a>
         </div>
-        <img src="https://files.catbox.moe/zbqhvf.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        </article>
-                        <article>
-                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        <!-- Premium Paket 2 -->
+        <div class="product-item">
+            <h3>Paket P2</h3>
+            <p>Rp10.000 / 15 Hari</p>
+            <p>Unlock Feature Premium</p>
+            <p>Unlimited Limit</p>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+PAKET+PREMIUM+P2" class="button" target="_blank">Beli Sekarang</a>
         </div>
-        <img src=https://files.catbox.moe/zbqhvf.png "
-        alt="Arrow icon "
-        class="icon arrow "
-        onclick="location.href='./#projects' "
-      />
-    </section>
-    <section id="projects ">
-      <p class="section__text__p1 ">Browse My Recent</p>
-      <h1 class="title ">Projects</h1>
-      <div class="experience-details-container ">
-        <div class="about-containers ">
-          <div class="details-container color-container ">
-            <div class="article-container ">
-              <img
-                src="https://files.catbox.moe/6f884s.jpg "
-                alt="Project 1 "
-                class="project-img "
-              />
-            </div>
-            <h2 class="experience-sub-title project-title ">Project Web Store</h2>
-            <div class="btn-container ">
-              <button
-                class="btn btn-color-2 project-btn "
-                onclick="location.href='https://chat.whatsapp.com/DHf8QNbNAl9KsPfaBq6jt8' "
-              >
-                Grub Wa
-              </button>
-              <button
-                class="btn btn-color-2 project-btn "
-                onclick="location.href='https://riuupdate1.vercel.app/' "
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container ">
-            <div class="article-container ">
-              <img
-                src="https://files.catbox.moe/h596vr.jpg "
-                alt="Project 2 "
-                class="project-img "
-              />
-            </div>
-            <h2 class="experience-sub-title project-title ">Project Two</h2>
-            <div class="btn-container ">
-              <button
-                class="btn btn-color-2 project-btn "
-                onclick="location.href='https://chat.whatsapp.com/DHf8QNbNAl9KsPfaBq6jt8' "
-              >
-                Grub Wa
-              </button>
-              <button
-                class="btn btn-color-2 project-btn "
-                onclick="location.href='https://riuze.vercel.app/' "
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+        <!-- Premium Paket 3 -->
+        <div class="product-item">
+            <h3>Paket P3</h3>
+            <p>Rp20.000 / 30 Hari</p>
+            <p>Unlock Feature Premium</p>
+            <p>Unlimited Limit</p>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+PAKET+PREMIUM+P3" class="button" target="_blank">Beli Sekarang</a>
         </div>
-      </div>
-      <img
-        src="https://files.catbox.moe/zbqhvf.png "
-        alt="Arrow icon "
-        class="icon arrow "
-        onclick="location.href='./#contact' "
-      />
-    </section>
-<iframe style="border-radius:12px " 
-        src="https://open.spotify.com/embed/playlist/6R1efB9XRUEHrxQyN24Qda?si=zj22LLR8Qw2yqfGm0F5uDg&pi=a-CBWDMSiGTFWN " 
-        width="300 " 
-        height="380 " 
-        frameBorder="0 " 
-        allowfullscreen=" " 
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture ">
-</iframe>
-    <footer>
-      <nav>
-        <div class="nav-links-container ">
-          <ul class="nav-links ">
-            <li><a href="#about ">About</a></li>
-            <li><a href="#experience ">Experience</a></li>
-            <li><a href="#projects ">Projects</a></li>
-            <li><a href="#contact ">Contact</a></li>
-          </ul>
+        <!-- Premium Paket 4 -->
+        <div class="product-item">
+            <h3>Paket P4</h3>
+            <p>Rp30.000 / 60 Hari</p>
+            <p>Unlock Feature Premium</p>
+            <p>Unlimited Limit</p>
+            <a href="https://wa.me/6283894064758?text=HAI+OWNER+SAYA+INGIN+MEMBELI+PRODUK+PAKET+PREMIUM+P4" class="button" target="_blank">Beli Sekarang</a>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 RiuzeMD. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js "></script>
-  </body>
+    </div>
+</section>
+
+<section>
+    <h2>Media Sosial</h2>
+    <p>Temukan kami di media sosial untuk mendapatkan informasi terbaru dan update:</p>
+    <a href="https://whatsapp.com/channel/0029Vafa8wiAO7RNz7Bt1Y1p" class="button" target="_blank">CHANNEL BOT</a>
+    <a href="https://chat.whatsapp.com/Htvie8eEyCX5qF50GuRAGN" class="button" target="_blank">GROUP BOT</a>
+</section>
+
+<section>
+    <h2>Nomer Bot</h2>
+    <p>GUNAKAN BOT DENGAN BIJAK:</p>
+    <p>JANGAN SPAM BOT</p>
+    <p>JANGAN LUPA BACA RULES KETIK .rules</p>
+    <p>DI PRIVATE CHAT BOT</p>
+    <div href="https://wa.me/6283191348966?text=.menu" class="button" target="_blank">Nomer Bot</div>
+</section>
+
+<section>
+    <h2>Nomer Owner</h2>
+    <p> JIKA ADA PERTANYAAN YANG INGIN DI SAMPAIKAN</p>
+    <p>SILAHKAN HUBUNGI OWNER</p>
+    <p>JANGAN SPAM & TELPON</p>
+    <a href="https://wa.me/6283894064758?text=HALLO+OWNER" class="button" target="_blank">Kontak Owner</a>
+</section>
+
+<section>
+    <h2>FAQ - Pertanyaan yang Sering Diajukan</h2>
+    <div class="faq-item">
+        <h3>1. Apa itu Asuna Botz Store?</h3>
+        <p>Asuna Botz Store adalah platform yang menyediakan layanan sewa bot dan paket premium untuk meningkatkan fungsionalitas bot sesuai kebutuhan Anda.</p>
+    </div>
+    <div class="faq-item">
+        <h3>2. Bagaimana cara membeli paket sewa bot?</h3>
+        <p>Untuk membeli paket sewa bot, klik tombol "Beli Sekarang" pada produk yang Anda inginkan, kemudian lanjutkan ke WhatsApp untuk proses pembayaran.</p>
+    </div>
+    <div class="faq-item">
+        <h3>3. Apakah ada garansi untuk layanan bot?</h3>
+        <p>Ya, kami memberikan garansi untuk setiap paket bot yang Anda sewa. Jika ada masalah, silakan hubungi kami melalui kontak yang tersedia.</p>
+    </div>
+    <div class="faq-item">
+        <h3>4. Apakah saya bisa memperpanjang masa sewa bot?</h3>
+        <p>Ya, Anda dapat memperpanjang masa sewa bot dengan membeli paket baru. Silakan hubungi kami untuk detail lebih lanjut.</p>
+    </div>
+    <div class="faq-item">
+        <h3>5. Bagaimana cara menghubungi customer service?</h3>
+        <p>Anda dapat menghubungi customer service kami melalui WhatsApp dengan mengklik tombol "Kontak Owner" atau "Beli Sekarang" di setiap produk.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Asuna Botz Store. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+    // Fungsi untuk Play/Pause audio
+    const audioPlayer = document.getElementById('audio-player');
+    const playBtn = document.getElementById('play-btn');
+    const stopBtn = document.getElementById('stop-btn');
+
+    playBtn.addEventListener('click', () => {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playBtn.textContent = 'Pause Lagu';
+        } else {
+            audioPlayer.pause();
+            playBtn.textContent = 'Play Lagu';
+        }
+    });
+
+    stopBtn.addEventListener('click', () => {
+        audioPlayer.pause();
+        audioPlayer.currentTime = 0;
+        playBtn.textContent = 'Play Lagu';
+    });
+</script>
+
+</body>
 </html>
+        
