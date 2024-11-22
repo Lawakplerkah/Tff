@@ -1,100 +1,105 @@
-/* Reset */
-body, h1, h2, h3, p, ul, li, a, input, textarea, button {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f9;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-header h1 {
+h1, h2 {
+    color: #333;
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    text-align: center;
-    margin-top: 0.5rem;
+p, li {
+    color: #555;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-header nav ul li a {
-    color: #fff;
+a {
+    color: #007BFF;
     text-decoration: none;
 }
 
-#hero {
-    background: #f4f4f4;
-    padding: 2rem 0;
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Slider Section */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    min-width: 200px;
+    flex: 0 0 auto;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-#hero .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
+.card h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-#services, #pricing, #contact {
-    padding: 2rem 0;
+.card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #007BFF;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.card ul li {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* Payment Section */
+.payment, .information {
+    margin: 20px 0;
+}
+
+.payment h2, .information h2 {
+    font-size: 20px;
+    color: #007BFF;
+}
+
+/* Footer */
+.footer {
     text-align: center;
-}
-
-.service-item, .pricing-item {
-    margin: 1rem 0;
-}
-
-form {
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 0.7rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
 }
