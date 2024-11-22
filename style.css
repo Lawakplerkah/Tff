@@ -1,159 +1,100 @@
-/* Reset dan dasar styling */
-* {
+/* Reset */
+body, h1, h2, h3, p, ul, li, a, input, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-header {
-    position: relative;
-    text-align: center;
-    background: linear-gradient(to right, #4CAF50, #81C784);
-    padding: 60px 20px;
-    color: white;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-header .header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-header p {
-    font-size: 1.3em;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-}
-
-header .button {
-    font-size: 1.1em;
-    background-color: #fff;
-    color: #4CAF50;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-header .button:hover {
-    background-color: #4CAF50;
-    color: white;
-    transform: translateY(-5px);
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    margin-top: 30px;
-}
-
-/* Styling untuk produk */
-.products {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
 }
 
-.products h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #4CAF50;
-}
-
-.product-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.product-item {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+header nav ul {
+    list-style: none;
     text-align: center;
-    transition: transform 0.3s ease;
+    margin-top: 0.5rem;
 }
 
-.product-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
 }
 
-.product-item:hover {
-    transform: translateY(-10px);
-}
-
-.product-item:hover img {
-    transform: scale(1.05);
-}
-
-.product-item h3 {
-    font-size: 1.4em;
-    margin-top: 20px;
-    color: #4CAF50;
-}
-
-.product-item p {
-    font-size: 1.2em;
-    color: #555;
-    margin: 10px 0;
-}
-
-.product-item .button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 25px;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1em;
-    transition: background-color 0.3s, transform 0.3s;
 }
 
-.product-item .button:hover {
-    background-color: #388E3C;
-    transform: translateY(-3px);
+#hero {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
 }
 
-/* Footer Styling */
+#hero .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#services, #pricing, #contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.service-item, .pricing-item {
+    margin: 1rem 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 30px;
-    margin-top: 50px;
-}
-
-footer .footer-content p {
-    margin: 10px 0;
-}
-
-footer a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
 }
