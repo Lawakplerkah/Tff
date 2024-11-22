@@ -1,0 +1,260 @@
+l
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">RiuzeMD</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Riuze</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="https://files.catbox.moe/v9ih8a.png" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="shine">Riuze</h1>
+            <p class="section__text__p2">Content Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('https://whatsapp.com/channel/0029VasIl1Y002TAMpEgWv2y')">
+    Saluran Wa
+  </button>
+                <button class="btn btn-color-1" onclick="window.open('https://wa.me/628388910861')">
+    Whatsapp
+  </button>
+            </div>
+            <div id="socials-container">
+                <img src="https://files.catbox.moe/k9bi45.png" alt="My Discord" class="icon" onclick="location.href='https://discord.com/'" />
+                <img src="https://files.catbox.moe/ow36s9.png" alt="My Whatsapp" class="icon" onclick="location.href='https://wa.me/628388910861'" />
+            </div>
+        </div>
+    </section>
+    <div class="dropdown">
+        <input hidden="" class="sr-only" name="state-dropdown" id="state-dropdown" type="checkbox" />
+        <label aria-label="dropdown scrollbar" for="state-dropdown" class="trigger"></label>
+
+        <ul class="list webkit-scrollbar" role="list" dir="auto">
+            <li class="listitem" role="listitem">
+                <article class="article">Subs My Youtube.</article>
+            </li>
+
+            <li class="listitem" role="listitem">
+                <article class="article">
+                    Gamer And Content Creator YT.
+                </article>
+            </li>
+
+            <li class="listitem" role="listitem">
+                <article class="article">
+                    Thanks You For All.
+                </article>
+            </li>
+        </ul>
+    </div>
+
+    <section id="about">
+        <p class="section__text__p1">Informasi Lainnya</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="https://files.catbox.moe/peus7x.gif" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="https://files.catbox.moe/hw2zuv.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>1+ Montth <br />Website Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="https://files.catbox.moe/zbqhvf.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Smk ( TKJ )<br />Teknik Komputer Jaringan</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a website coding beginner with only 1 month of experience. Cannot be described as a practical and effective developer, experienced in leading cross-functional teams under time pressure to complete projects
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="https://files.catbox.moe/zbqhvf.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        </article>
+                        <article>
+                            <img src="https://files.catbox.moe/whfx32.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src=https://files.catbox.moe/zbqhvf.png "
+        alt="Arrow icon "
+        class="icon arrow "
+        onclick="location.href='./#projects' "
+      />
+    </section>
+    <section id="projects ">
+      <p class="section__text__p1 ">Browse My Recent</p>
+      <h1 class="title ">Projects</h1>
+      <div class="experience-details-container ">
+        <div class="about-containers ">
+          <div class="details-container color-container ">
+            <div class="article-container ">
+              <img
+                src="https://files.catbox.moe/6f884s.jpg "
+                alt="Project 1 "
+                class="project-img "
+              />
+            </div>
+            <h2 class="experience-sub-title project-title ">Project Web Store</h2>
+            <div class="btn-container ">
+              <button
+                class="btn btn-color-2 project-btn "
+                onclick="location.href='https://chat.whatsapp.com/DHf8QNbNAl9KsPfaBq6jt8' "
+              >
+                Grub Wa
+              </button>
+              <button
+                class="btn btn-color-2 project-btn "
+                onclick="location.href='https://riuupdate1.vercel.app/' "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container ">
+            <div class="article-container ">
+              <img
+                src="https://files.catbox.moe/h596vr.jpg "
+                alt="Project 2 "
+                class="project-img "
+              />
+            </div>
+            <h2 class="experience-sub-title project-title ">Project Two</h2>
+            <div class="btn-container ">
+              <button
+                class="btn btn-color-2 project-btn "
+                onclick="location.href='https://chat.whatsapp.com/DHf8QNbNAl9KsPfaBq6jt8' "
+              >
+                Grub Wa
+              </button>
+              <button
+                class="btn btn-color-2 project-btn "
+                onclick="location.href='https://riuze.vercel.app/' "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://files.catbox.moe/zbqhvf.png "
+        alt="Arrow icon "
+        class="icon arrow "
+        onclick="location.href='./#contact' "
+      />
+    </section>
+<iframe style="border-radius:12px " 
+        src="https://open.spotify.com/embed/playlist/6R1efB9XRUEHrxQyN24Qda?si=zj22LLR8Qw2yqfGm0F5uDg&pi=a-CBWDMSiGTFWN " 
+        width="300 " 
+        height="380 " 
+        frameBorder="0 " 
+        allowfullscreen=" " 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture ">
+</iframe>
+    <footer>
+      <nav>
+        <div class="nav-links-container ">
+          <ul class="nav-links ">
+            <li><a href="#about ">About</a></li>
+            <li><a href="#experience ">Experience</a></li>
+            <li><a href="#projects ">Projects</a></li>
+            <li><a href="#contact ">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 RiuzeMD. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js "></script>
+  </body>
+</html>
